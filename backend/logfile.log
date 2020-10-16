@@ -1,0 +1,134 @@
+{
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\uploads\\profile_pic-1601632820172',
+  storageErrors: [],
+  level: 'error',
+  timestamp: '2020-10-02T10:00:20.191Z'
+}
+{
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'D:\\uploads\\profile_pic-1601633125387',
+  storageErrors: [],
+  level: 'error',
+  timestamp: '2020-10-02T10:05:25.403Z'
+}
+{
+  message: 'connection timed out',
+  name: 'MongooseServerSelectionError',
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    setName: 'atlas-nhx27u-shard-0',
+    maxSetVersion: null,
+    maxElectionId: null,
+    servers: Map {
+      'cluster0-shard-00-00.vntyb.mongodb.net:27017' => ServerDescription {
+        address: 'cluster0-shard-00-00.vntyb.mongodb.net:27017',
+        error: undefined,
+        roundTripTime: 3726.02675616,
+        lastUpdateTime: 1602832736773,
+        lastWriteDate: 2020-10-16T07:18:50.000Z,
+        opTime: {
+          ts: Timestamp {
+            _bsontype: 'Timestamp',
+            low_: 1,
+            high_: 1602832730
+          },
+          t: 31
+        },
+        type: 'RSSecondary',
+        minWireVersion: 0,
+        maxWireVersion: 8,
+        maxBsonObjectSize: 16777216,
+        maxMessageSizeBytes: 48000000,
+        maxWriteBatchSize: 100000,
+        me: 'cluster0-shard-00-00.vntyb.mongodb.net:27017',
+        hosts: [
+          'cluster0-shard-00-00.vntyb.mongodb.net:27017',
+          'cluster0-shard-00-01.vntyb.mongodb.net:27017',
+          'cluster0-shard-00-02.vntyb.mongodb.net:27017'
+        ],
+        passives: [],
+        arbiters: [],
+        tags: {
+          provider: 'AWS',
+          region: 'US_EAST_1',
+          nodeType: 'ELECTABLE',
+          workloadType: 'OPERATIONAL'
+        },
+        setName: 'atlas-nhx27u-shard-0',
+        setVersion: 4,
+        primary: 'cluster0-shard-00-02.vntyb.mongodb.net:27017',
+        logicalSessionTimeoutMinutes: 30,
+        '$clusterTime': {
+          clusterTime: Timestamp {
+            _bsontype: 'Timestamp',
+            low_: 1,
+            high_: 1602832730
+          },
+          signature: {
+            hash: Binary {
+              _bsontype: 'Binary',
+              sub_type: 0,
+              position: 20,
+              buffer: <Buffer 9d bf ca 11 02 19 71 bf 65 22 e4 52 57 0d 3d c9 57 8c a9 f9>
+            },
+            keyId: Long { _bsontype: 'Long', low_: 4, high_: 1587566008 }
+          }
+        }
+      },
+      'cluster0-shard-00-01.vntyb.mongodb.net:27017' => ServerDescription {
+        address: 'cluster0-shard-00-01.vntyb.mongodb.net:27017',
+        error: MongoNetworkError: connection timed out
+            at connectionFailureError (D:\recipeApp\backend\node_modules\mongodb\lib\core\connection\connect.js:406:14)
+            at TLSSocket.<anonymous> (D:\recipeApp\backend\node_modules\mongodb\lib\core\connection\connect.js:294:16)
+            at Object.onceWrapper (events.js:421:28)
+            at TLSSocket.emit (events.js:315:20)
+            at TLSSocket.Socket._onTimeout (net.js:482:8)
+            at listOnTimeout (internal/timers.js:549:17)
+            at processTimers (internal/timers.js:492:7) {
+          [Symbol(mongoErrorContextSymbol)]: {}
+        },
+        roundTripTime: -1,
+        lastUpdateTime: 1602832736469,
+        lastWriteDate: null,
+        opTime: null,
+        type: 'Unknown',
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: []
+      },
+      'cluster0-shard-00-02.vntyb.mongodb.net:27017' => ServerDescription {
+        address: 'cluster0-shard-00-02.vntyb.mongodb.net:27017',
+        error: undefined,
+        roundTripTime: -1,
+        lastUpdateTime: 1602832713194,
+        lastWriteDate: null,
+        opTime: null,
+        type: 'Unknown',
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: []
+      }
+    },
+    stale: false,
+    compatible: true,
+    compatibilityError: null,
+    logicalSessionTimeoutMinutes: 30,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    commonWireVersion: 8
+  },
+  level: 'error',
+  timestamp: '2020-10-16T07:19:03.206Z',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}

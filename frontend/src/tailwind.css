@@ -1,0 +1,13 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* .navlink {
+  mx-4 inline-block text-gray-500 font-semibold;
+}
+
+.navlink--active {
+  text-purple-800 border-b-2;
+} */
